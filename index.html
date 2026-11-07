@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10100e">
+  <meta name="description" content="TRAP RESTAURANT — African soul, continental elegance. Explore our menu, order online and reserve your table.">
+  <title>TRAP RESTAURANT | African Soul, Continental Elegance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#10100e;--panel:#181815;--panel2:#20201b;--gold:#d6ad62;--gold2:#f0d69b;--cream:#f5f0e6;--muted:#aaa69c;--line:rgba(214,173,98,.2);--green:#758d68}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}.container{width:min(1160px,calc(100% - 40px));margin:auto}.eyebrow{color:var(--gold);font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}.section{padding:92px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:34px}.section-head h2,.about-copy h2,.reservation-copy h2{font:600 clamp(2rem,4vw,3.4rem)/1.12 "Playfair Display",serif;margin:10px 0}.section-head p{color:var(--muted);max-width:440px;line-height:1.7;margin:0}.gold-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--gold);color:#17140e;border:1px solid var(--gold);padding:14px 22px;font-weight:700;letter-spacing:.02em;transition:.25s}.gold-btn:hover{background:var(--gold2);transform:translateY(-2px)}.outline-btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border:1px solid var(--line);color:var(--cream);font-weight:600;transition:.25s}.outline-btn:hover{border-color:var(--gold);color:var(--gold)}.topbar{background:#0b0b09;border-bottom:1px solid rgba(255,255,255,.06);font-size:.76rem;color:var(--muted)}.topbar .container{display:flex;justify-content:space-between;padding:10px 0;gap:15px}.navbar{position:sticky;top:0;z-index:20;background:rgba(16,16,14,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}.nav-inner{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px}.brand-mark{width:42px;height:42px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font:700 1.1rem "Playfair Display",serif;transform:rotate(45deg)}.brand-mark span{transform:rotate(-45deg)}.brand-name{font:700 1rem "Playfair Display",serif;letter-spacing:.12em}.brand-sub{font-size:.58rem;color:var(--gold);letter-spacing:.2em;margin-top:3px}.nav-links{display:flex;align-items:center;gap:28px;color:#d5d0c5;font-size:.88rem}.nav-links a:hover{color:var(--gold)}.nav-actions{display:flex;align-items:center;gap:12px}.cart-btn{position:relative;background:transparent;border:1px solid var(--line);color:var(--cream);padding:10px 13px}.cart-count{position:absolute;top:-8px;right:-8px;background:var(--gold);color:#15120c;width:19px;height:19px;border-radius:50%;font-size:.7rem;display:grid;place-items:center;font-weight:700}.menu-toggle{display:none;background:none;border:1px solid var(--line);color:var(--cream);padding:9px 12px}
+    .hero{min-height:660px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(10,10,8,.96) 0%,rgba(10,10,8,.82) 42%,rgba(10,10,8,.18) 100%)}
+    .hero{background-image:linear-gradient(90deg,rgba(10,10,8,.96) 0%,rgba(10,10,8,.82) 42%,rgba(10,10,8,.22) 100%),url("https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=2000&q=85")}
+    .hero-content{max-width:650px;padding:100px 0;position:relative}.hero h1{font:600 clamp(3.2rem,7vw,6.1rem)/.99 "Playfair Display",serif;margin:20px 0}.hero h1 em{font-style:normal;color:var(--gold)}.hero p{color:#d0cbc0;line-height:1.8;font-size:1.02rem;max-width:510px;margin:24px 0 30px}.hero-buttons{display:flex;gap:13px;flex-wrap:wrap}.hero-note{margin-top:54px;display:flex;gap:25px;flex-wrap:wrap;color:#c8c1b4;font-size:.8rem}.hero-note span:before{content:"✦";color:var(--gold);margin-right:8px}
+    .features{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#141411}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr)}.feature{padding:27px 25px;display:flex;gap:15px;align-items:center;border-right:1px solid var(--line)}.feature:last-child{border:0}.feature-icon{font-size:1.5rem;color:var(--gold)}.feature strong{display:block;font:600 1.05rem "Playfair Display",serif}.feature small{color:var(--muted);display:block;margin-top:5px}
+    .menu-section{background:#121210}.filters{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:26px}.filter{border:1px solid var(--line);background:transparent;color:#c9c2b6;padding:9px 16px;font-size:.82rem}.filter.active,.filter:hover{background:var(--gold);color:#17140e;border-color:var(--gold)}.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.food-card{background:var(--panel);border:1px solid rgba(255,255,255,.06);overflow:hidden;transition:.25s}.food-card:hover{transform:translateY(-5px);border-color:var(--line)}.food-img{height:215px;position:relative;overflow:hidden}.food-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.food-card:hover .food-img img{transform:scale(1.06)}.food-tag{position:absolute;top:14px;left:14px;background:rgba(16,16,14,.88);color:var(--gold2);padding:7px 10px;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase}.food-info{padding:20px}.food-top{display:flex;justify-content:space-between;gap:12px;align-items:start}.food-info h3{font:600 1.25rem "Playfair Display",serif;margin:0}.price{color:var(--gold);font-weight:700;white-space:nowrap}.food-info p{color:var(--muted);font-size:.84rem;line-height:1.6;min-height:42px;margin:12px 0 18px}.add-btn{width:100%;padding:11px;border:1px solid var(--line);background:transparent;color:var(--gold);font-weight:700}.add-btn:hover{background:var(--gold);color:#17140e}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.about-photos{position:relative;min-height:500px}.about-main{width:82%;height:440px;object-fit:cover}.about-small{position:absolute;width:47%;height:245px;object-fit:cover;right:0;bottom:0;border:8px solid var(--bg)}.about-copy p{color:var(--muted);line-height:1.85}.stats{display:flex;gap:32px;margin:30px 0}.stat strong{font:600 2rem "Playfair Display",serif;color:var(--gold);display:block}.stat span{font-size:.76rem;color:var(--muted)}
+    .reservation{background:linear-gradient(90deg,rgba(10,10,8,.96),rgba(10,10,8,.8)),url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=85") center/cover}.reservation-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:center}.reservation-copy p{color:#c0b9ad;line-height:1.8}.contact-line{margin-top:25px;color:var(--gold2);line-height:2}.form-card{background:#171713;border:1px solid var(--line);padding:32px}.form-card h3{font:600 1.6rem "Playfair Display",serif;margin:0 0 22px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:8px}.field.full{grid-column:1/-1}.field label{font-size:.77rem;color:#c7c0b4}.field input,.field select,.field textarea{width:100%;background:#10100e;border:1px solid rgba(255,255,255,.12);color:var(--cream);padding:13px;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}.field textarea{min-height:85px;resize:vertical}.form-card .gold-btn{width:100%;margin-top:18px}.form-note{color:var(--muted);font-size:.72rem;margin:12px 0 0}
+    .testimonials{background:#151512}.quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.quote{padding:26px;background:var(--panel);border:1px solid rgba(255,255,255,.06)}.stars{color:var(--gold);letter-spacing:.16em}.quote p{color:#c9c2b7;line-height:1.8;font:italic 1rem "Playfair Display",serif}.quote strong{font-size:.82rem}.quote small{display:block;color:var(--muted);margin-top:4px}
+    .footer{padding:55px 0 22px;background:#0b0b09;border-top:1px solid var(--line)}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:35px}.footer p,.footer a,.footer li{color:var(--muted);font-size:.83rem;line-height:1.9}.footer h4{font:600 1.05rem "Playfair Display",serif;color:var(--cream);margin:0 0 14px}.footer ul{list-style:none;padding:0;margin:0}.footer a:hover{color:var(--gold)}.copyright{border-top:1px solid rgba(255,255,255,.08);margin-top:38px;padding-top:18px;color:#77736a;font-size:.72rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .overlay{position:fixed;inset:0;background:rgba(0,0,0,.68);z-index:50;opacity:0;visibility:hidden;transition:.25s}.overlay.show{opacity:1;visibility:visible}.cart-drawer{position:fixed;z-index:51;right:0;top:0;height:100%;width:min(430px,100%);background:#171713;border-left:1px solid var(--line);padding:25px;transform:translateX(100%);transition:.3s;display:flex;flex-direction:column}.cart-drawer.show{transform:translateX(0)}.drawer-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px}.drawer-head h3{font:600 1.5rem "Playfair Display",serif;margin:0}.close-btn{background:transparent;border:1px solid var(--line);color:var(--cream);width:36px;height:36px}.cart-items{overflow:auto;flex:1;padding:12px 0}.cart-item{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.07)}.cart-item strong{font-size:.9rem}.cart-item small{display:block;color:var(--gold);margin-top:5px}.qty{display:flex;align-items:center;gap:9px}.qty button{background:transparent;border:1px solid var(--line);color:var(--cream);width:27px;height:27px}.cart-bottom{border-top:1px solid var(--line);padding-top:18px}.total-row{display:flex;justify-content:space-between;margin-bottom:16px;font-weight:700}.cart-bottom .gold-btn{width:100%}.empty{color:var(--muted);text-align:center;padding:45px 10px}.toast{position:fixed;bottom:25px;left:50%;transform:translate(-50%,20px);background:var(--gold);color:#17140e;padding:12px 20px;font-weight:700;font-size:.85rem;opacity:0;transition:.25s;z-index:80;pointer-events:none}.toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(max-width:850px){.nav-links{display:none;position:absolute;top:78px;left:0;right:0;background:#11110e;padding:22px 25px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.menu-toggle{display:block}.nav-actions .gold-btn{display:none}.hero{min-height:590px;background-position:60% center}.menu-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.reservation-grid{grid-template-columns:1fr;gap:38px}.about-photos{min-height:420px}.about-main{height:370px}.about-small{height:200px}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.container{width:min(100% - 30px,1160px)}.topbar .container{font-size:.68rem}.topbar .hide-mobile{display:none}.nav-inner{height:70px}.brand-name{font-size:.86rem}.brand-mark{width:35px;height:35px}.nav-links{top:70px}.hero{min-height:610px;background-position:62% center}.hero-content{padding:80px 0}.hero h1{font-size:3.55rem}.hero p{font-size:.92rem}.hero-note{margin-top:38px;gap:12px;flex-direction:column}.section{padding:68px 0}.section-head{display:block}.section-head p{margin-top:14px}.feature-grid{grid-template-columns:1fr}.feature{border-right:0;border-bottom:1px solid var(--line);padding:20px 5px}.feature:last-child{border-bottom:0}.menu-grid{grid-template-columns:1fr}.food-img{height:230px}.about-photos{min-height:350px}.about-main{height:320px}.about-small{height:155px;border-width:5px}.stats{gap:20px}.stat strong{font-size:1.6rem}.form-card{padding:22px 17px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.quote-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr;gap:25px}.footer-grid>div:first-child{grid-column:1/-1}.copyright{font-size:.68rem}.section-head h2,.about-copy h2,.reservation-copy h2{font-size:2.4rem}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>✦ &nbsp; African soul. Continental elegance.</span><span class="hide-mobile">Open daily · 11:00 AM – 10:00 PM</span><span>Call: +233 XX XXX XXXX</span></div></div>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="TRAP Restaurant home"><div class="brand-mark"><span>T</span></div><div><div class="brand-name">TRAP RESTAURANT</div><div class="brand-sub">DINE · TASTE · EXPERIENCE</div></div></a>
+      <nav class="nav-links" id="navLinks"><a href="#home">Home</a><a href="#menu">Our Menu</a><a href="#about">Our Story</a><a href="#reservations">Reservations</a><a href="#contact">Contact</a></nav>
+      <div class="nav-actions"><button class="cart-btn" id="openCart" aria-label="Open shopping cart">Bag <span class="cart-count" id="cartCount">0</span></button><a class="gold-btn" href="#reservations">Book a Table</a><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home"><div class="container"><div class="hero-content">
+      <div class="eyebrow">Welcome to TRAP RESTAURANT</div>
+      <h1>A taste of<br><em>Africa.</em> A touch<br>of the world.</h1>
+      <p>Discover bold African flavours and beloved continental classics, thoughtfully prepared and served with unforgettable hospitality.</p>
+      <div class="hero-buttons"><a class="gold-btn" href="#menu">Explore Our Menu &nbsp; ↗</a><a class="outline-btn" href="#reservations">Reserve Your Table</a></div>
+      <div class="hero-note"><span>Fresh ingredients</span><span>Made with passion</span><span>Memorable moments</span></div>
+    </div></div></section>
+
+    <section class="features"><div class="container feature-grid">
+      <div class="feature"><div class="feature-icon">✧</div><div><strong>Authentic Flavours</strong><small>Local favourites, made with care</small></div></div>
+      <div class="feature"><div class="feature-icon">♨</div><div><strong>Freshly Prepared</strong><small>Quality ingredients in every dish</small></div></div>
+      <div class="feature"><div class="feature-icon">◇</div><div><strong>Warm Hospitality</strong><small>Every guest is part of our story</small></div></div>
+    </div></section>
+
+    <section class="section menu-section" id="menu"><div class="container">
+      <div class="section-head"><div><div class="eyebrow">A menu worth exploring</div><h2>Our signature dishes</h2></div><p>From comforting Ghanaian favourites to continental delights, find your next favourite on our menu.</p></div>
+      <div class="filters" id="filters"><button class="filter active" data-filter="All">All Dishes</button><button class="filter" data-filter="African">African</button><button class="filter" data-filter="Continental">Continental</button><button class="filter" data-filter="Drinks">Drinks</button></div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </div></section>
+
+    <section class="section" id="about"><div class="container about-grid">
+      <div class="about-photos"><img class="about-main" src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=85" alt="Beautiful restaurant dining setting"><img class="about-small" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=85" alt="Freshly prepared food"></div>
+      <div class="about-copy"><div class="eyebrow">More than just a meal</div><h2>Good food. Great company. Golden memories.</h2><p>At TRAP RESTAURANT, we bring people together through food. Our kitchen celebrates the richness of African cooking while embracing the creativity of continental cuisine.</p><p>Whether you're joining us for a quick lunch, a family celebration or a special evening, expect generous flavour, thoughtful service and a welcoming atmosphere.</p><div class="stats"><div class="stat"><strong>100%</strong><span>Made with passion</span></div><div class="stat"><strong>Fresh</strong><span>Quality ingredients</span></div><div class="stat"><strong>Every</strong><span>Moment matters</span></div></div><a class="outline-btn" href="#reservations">Come dine with us ↗</a></div>
+    </div></section>
+
+    <section class="section reservation" id="reservations"><div class="container reservation-grid">
+      <div class="reservation-copy"><div class="eyebrow">Your table is waiting</div><h2>Make tonight<br>something special.</h2><p>Planning a date, family dinner or a get-together with friends? Reserve your table and let us take care of the rest.</p><div class="contact-line">✦ &nbsp; Daily: 11:00 AM – 10:00 PM<br>✦ &nbsp; Phone: +233 XX XXX XXXX<br>✦ &nbsp; Location: Add your restaurant address</div></div>
+      <form class="form-card" id="reservationForm"><h3>Reserve a table</h3><div class="form-grid">
+        <div class="field"><label for="guestName">Your name</label><input id="guestName" name="name" required placeholder="Full name"></div>
+        <div class="field"><label for="guestPhone">Phone number</label><input id="guestPhone" name="phone" type="tel" required placeholder="+233 ..."></div>
+        <div class="field"><label for="resDate">Date</label><input id="resDate" name="date" type="date" required></div>
+        <div class="field"><label for="resTime">Time</label><select id="resTime" name="time" required><option value="">Select a time</option><option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option></select></div>
+        <div class="field"><label for="guests">Number of guests</label><select id="guests" name="guests" required><option value="">Select guests</option><option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6 guests</option><option>7+ guests</option></select></div>
+        <div class="field"><label for="occasion">Occasion (optional)</label><select id="occasion" name="occasion"><option>Just dining</option><option>Birthday</option><option>Date night</option><option>Family gathering</option><option>Business meeting</option></select></div>
+        <div class="field full"><label for="resNotes">Special requests (optional)</label><textarea id="resNotes" name="notes" placeholder="Any dietary needs or special requests?"></textarea></div>
+      </div><button class="gold-btn" type="submit">Request Reservation ↗</button><p class="form-note">Your request will open WhatsApp so our team can confirm your booking.</p></form>
+    </div></section>
+
+    <section class="section testimonials"><div class="container"><div class="section-head"><div><div class="eyebrow">The TRAP experience</div><h2>What makes a great meal?</h2></div><p>Good food is best enjoyed when shared. We look forward to welcoming you.</p></div><div class="quote-grid">
+      <article class="quote"><div class="stars">★★★★★</div><p>“The perfect place to enjoy familiar African flavours in a beautiful setting. The attention to detail is lovely.”</p><strong>A happy guest</strong><small>Guest experience</small></article>
+      <article class="quote"><div class="stars">★★★★★</div><p>“Great atmosphere, welcoming service and a menu with something for everyone. I'll definitely be back.”</p><strong>A happy guest</strong><small>Guest experience</small></article>
+      <article class="quote"><div class="stars">★★★★★</div><p>“A wonderful spot for sharing a meal with friends and family. Every visit should feel this good.”</p><strong>A happy guest</strong><small>Guest experience</small></article>
+    </div></div></section>
+  </main>
+
+  <footer class="footer" id="contact"><div class="container"><div class="footer-grid">
+    <div><a class="brand" href="#home"><div class="brand-mark"><span>T</span></div><div><div class="brand-name">TRAP RESTAURANT</div><div class="brand-sub">DINE · TASTE · EXPERIENCE</div></div></a><p style="max-width:290px;margin-top:18px">African soul meets continental elegance. Come hungry, leave with a memory.</p></div>
+    <div><h4>Explore</h4><ul><li><a href="#home">Home</a></li><li><a href="#menu">Our Menu</a></li><li><a href="#about">Our Story</a></li><li><a href="#reservations">Reservations</a></li></ul></div>
+    <div><h4>Visit us</h4><ul><li>Location: Add your address</li><li>Daily: 11 AM – 10 PM</li><li>Phone: +233 XX XXX XXXX</li><li>Email: hello@traprestaurant.com</li></ul></div>
+    <div><h4>Follow along</h4><ul><li><a href="#" aria-label="Instagram">Instagram</a></li><li><a href="#" aria-label="Facebook">Facebook</a></li><li><a href="#" aria-label="TikTok">TikTok</a></li><li><a href="#reservations">Book a table</a></li></ul></div>
+  </div><div class="copyright"><span>© <span id="year"></span> TRAP RESTAURANT. All rights reserved.</span><span>Crafted for memorable dining.</span></div></div></footer>
+
+  <div class="overlay" id="overlay"></div><aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart"><div class="drawer-head"><h3>Your order</h3><button class="close-btn" id="closeCart" aria-label="Close cart">×</button></div><div class="cart-items" id="cartItems"><div class="empty">Your bag is waiting for something delicious.</div></div><div class="cart-bottom"><div class="total-row"><span>Total</span><span id="cartTotal">GH₵0.00</span></div><button class="gold-btn" id="checkoutBtn">Order via WhatsApp ↗</button><p class="form-note">We'll send your order details to the restaurant for confirmation.</p></div></aside><div class="toast" id="toast" role="status"></div>
+
+  <script>
+    // EDIT THESE SETTINGS BEFORE LAUNCHING:
+    const RESTAURANT_WHATSAPP = "233XXXXXXXXX"; // Ghana number, digits only, e.g. 233241234567
+    const CURRENCY = "GH₵";
+    const menuItems = [
+      {id:1,name:"Jollof Rice & Grilled Chicken",category:"African",price:85,tag:"Guest favourite",desc:"Smoky party-style jollof, grilled chicken and fresh pepper sauce.",image:"https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=85"},
+      {id:2,name:"Waakye Special",category:"African",price:70,tag:"Ghanaian classic",desc:"Waakye served with spaghetti, gari, stew, egg and your choice of protein.",image:"https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85"},
+      {id:3,name:"Grilled Tilapia",category:"African",price:120,tag:"Fresh from the grill",desc:"Whole grilled tilapia with spicy pepper, fresh onions and side of choice.",image:"https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=900&q=85"},
+      {id:4,name:"Creamy Alfredo Pasta",category:"Continental",price:95,tag:"Chef's pick",desc:"Silky parmesan cream sauce, herbs and perfectly cooked pasta.",image:"https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=85"},
+      {id:5,name:"Classic Beef Burger",category:"Continental",price:90,tag:"Made to order",desc:"Juicy beef patty, melted cheese, crisp lettuce and house sauce.",image:"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85"},
+      {id:6,name:"Grilled Chicken & Chips",category:"Continental",price:100,tag:"Popular",desc:"Seasoned grilled chicken served with golden fries and slaw.",image:"https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=900&q=85"},
+      {id:7,name:"Fresh Tropical Juice",category:"Drinks",price:25,tag:"Refreshing",desc:"A chilled blend of seasonal tropical fruits.",image:"https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=900&q=85"},
+      {id:8,name:"Classic Iced Tea",category:"Drinks",price:20,tag:"Cool & fresh",desc:"Freshly brewed tea served over ice with a citrus twist.",image:"https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=900&q=85"},
+      {id:9,name:"Chocolate Dessert",category:"Continental",price:55,tag:"Sweet finish",desc:"A rich chocolate treat to complete your dining experience.",image:"https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85"}
+    ];
+    const cart = new Map();
+    const money = value => CURRENCY + value.toFixed(2);
+    const menuGrid = document.getElementById("menuGrid");
+    function renderMenu(filter="All"){
+      menuGrid.innerHTML = menuItems.filter(item=>filter==="All"||item.category===filter).map(item=>`
+        <article class="food-card"><div class="food-img"><img src="${item.image}" alt="${item.name}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80'"><span class="food-tag">${item.tag}</span></div>
+        <div class="food-info"><div class="food-top"><h3>${item.name}</h3><span class="price">${money(item.price)}</span></div><p>${item.desc}</p><button class="add-btn" data-add="${item.id}">＋ Add to order</button></div></article>`).join("");
+    }
+    renderMenu();
+    document.getElementById("filters").addEventListener("click",e=>{
+      const btn=e.target.closest("[data-filter]");if(!btn)return;
+      document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b===btn));renderMenu(btn.dataset.filter);
+    });
+    function showToast(message){const toast=document.getElementById("toast");toast.textContent=message;toast.classList.add("show");setTimeout(()=>toast.classList.remove("show"),2300)}
+    function updateCart(){
+      const count=[...cart.values()].reduce((sum,item)=>sum+item.qty,0);
+      const total=[...cart.values()].reduce((sum,item)=>sum+item.qty*item.price,0);
+      document.getElementById("cartCount").textContent=count;
+      document.getElementById("cartTotal").textContent=money(total);
+      const holder=document.getElementById("cartItems");
+      if(!cart.size){holder.innerHTML='<div class="empty">Your bag is waiting for something delicious.</div>';return}
+      holder.innerHTML=[...cart.values()].map(item=>`<div class="cart-item"><div><strong>${item.name}</strong><small>${money(item.price)} each</small></div><div class="qty"><button data-qty="${item.id}" data-change="-1" aria-label="Decrease quantity">−</button><span>${item.qty}</span><button data-qty="${item.id}" data-change="1" aria-label="Increase quantity">＋</button></div></div>`).join("");
+    }
+    menuGrid.addEventListener("click",e=>{const btn=e.target.closest("[data-add]");if(!btn)return;const item=menuItems.find(x=>x.id===Number(btn.dataset.add));const current=cart.get(item.id)||{...item,qty:0};current.qty++;cart.set(item.id,current);updateCart();showToast(item.name+" added to your order");});
+    document.getElementById("cartItems").addEventListener("click",e=>{const btn=e.target.closest("[data-qty]");if(!btn)return;const id=Number(btn.dataset.qty),item=cart.get(id);item.qty+=Number(btn.dataset.change);if(item.qty<=0)cart.delete(id);updateCart();});
+    const drawer=document.getElementById("cartDrawer"),overlay=document.getElementById("overlay");
+    function openCart(){drawer.classList.add("show");overlay.classList.add("show")}
+    function closeCart(){drawer.classList.remove("show");overlay.classList.remove("show")}
+    document.getElementById("openCart").addEventListener("click",openCart);document.getElementById("closeCart").addEventListener("click",closeCart);overlay.addEventListener("click",closeCart);
+    function sendWhatsApp(message){if(!/^\d{10,15}$/.test(RESTAURANT_WHATSAPP)){showToast("Set the restaurant WhatsApp number in the code first.");return}window.open("https://wa.me/"+RESTAURANT_WHATSAPP+"?text="+encodeURIComponent(message),"_blank","noopener");}
+    document.getElementById("checkoutBtn").addEventListener("click",()=>{
+      if(!cart.size){showToast("Add a dish to your order first.");return}
+      const lines=[...cart.values()].map(i=>`${i.qty} x ${i.name} — ${money(i.qty*i.price)}`).join("\n");
+      const total=[...cart.values()].reduce((s,i)=>s+i.qty*i.price,0);
+      sendWhatsApp("Hello TRAP RESTAURANT! I would like to place an order:\n\n"+lines+"\n\nTotal: "+money(total)+"\n\nPlease confirm availability and delivery/pickup details.");
+    });
+    document.getElementById("reservationForm").addEventListener("submit",e=>{
+      e.preventDefault();const f=new FormData(e.target);
+      const message=`Hello TRAP RESTAURANT! I would like to request a table reservation.\n\nName: ${f.get("name")}\nPhone: ${f.get("phone")}\nDate: ${f.get("date")}\nTime: ${f.get("time")}\nGuests: ${f.get("guests")}\nOccasion: ${f.get("occasion")}\nSpecial requests: ${f.get("notes")||"None"}\n\nPlease confirm my reservation.`;
+      sendWhatsApp(message);
+    });
+    const dateInput=document.getElementById("resDate");const today=new Date();dateInput.min=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().split("T")[0];
+    document.getElementById("year").textContent=new Date().getFullYear();
+    document.getElementById("menuToggle").addEventListener("click",()=>document.getElementById("navLinks").classList.toggle("open"));
+    document.querySelectorAll("#navLinks a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("open")));
+  </script>
+</body>
+</html>
